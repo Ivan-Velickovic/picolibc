@@ -9,6 +9,7 @@ pub fn build(b: *std.Build) void {
 
     libc.addCSourceFiles(.{
         .files = &.{
+            "newlib/libc/search/qsort.c",
             "newlib/libc/string/wmemset.c",
             "newlib/libc/string/bzero.c",
             "newlib/libc/string/strnstr.c",
